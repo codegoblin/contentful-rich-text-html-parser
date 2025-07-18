@@ -42,7 +42,8 @@
     "lint:fix": "prettier --write ./src",
     "build": "tsc --project tsconfig.build.json && tsc --project tsconfig.module.json",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@contentful/rich-text-html-renderer": "^17.0.0",
