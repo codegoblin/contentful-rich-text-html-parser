@@ -4,8 +4,8 @@ import {
   convertTagToHyperlink,
   convertTextNodeToText,
   convertTagToChildren,
-} from "./converters";
-import { parseHtml, ParserOptions } from "./parseHtml";
+} from "./converters.js";
+import { parseHtml, ParserOptions } from "./parseHtml.js";
 import {
   Document,
   Mark,
@@ -21,8 +21,8 @@ import type {
   OptionsWithDefaults,
   TagConverter,
 } from "./types";
-import { createDocumentNode, getAsList, isNotNull } from "./utils";
-import { processConvertedNodesFromTopLevel } from "./processConvertedNodesFromTopLevel";
+import { createDocumentNode, getAsList, isNotNull } from "./utils.js";
+import { processConvertedNodesFromTopLevel } from "./processConvertedNodesFromTopLevel.js";
 
 const DEFAULT_TAG_CONVERTERS: Partial<
   Record<HTMLTagName, TagConverter<Block | Inline | Text>>
