@@ -6,9 +6,8 @@ import {
   TextNode,
   CommentNode,
 } from "parse5/dist/tree-adapters/default";
-import { isNotNull, isWhiteSpace } from "./utils";
-
-import type { HTMLNode, HTMLTagName } from "./types";
+import { isNotNull, isWhiteSpace } from "./utils.js";
+import type { HTMLNode, HTMLTagName } from "./types.js";
 
 export interface ParserOptions {
   ignoreWhiteSpace: boolean;
